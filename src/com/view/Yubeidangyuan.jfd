@@ -1,0 +1,134 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:650:x};par l {seq {space :0:0:x, par l {seq {space :116:116:p, comp label1:::p::p, space :43:43:p, comp s_peopleNameTxt:::p:127:p, space :95:95:p, comp button1:::p::p}, comp scrollPane1:::p:621:p, seq {space :p:43:p, comp label2:::p:253:p, space u:::p, comp nameTxt:::p:188:p}, seq {space :474:474:p, comp button2:::p::p}}, space :0:0:x}}"
+			"$verticalGroup": "par l {space :0:440:x};par l {seq {space :0:0:x, par l {seq {space :7:7:p, comp label1:::p::p}, seq {space :1:1:p, comp s_peopleNameTxt:::p::p}, comp button1:::p::p}, space :32:32:p, comp scrollPane1:::p:158:p, par l {seq {space :p:29:p, comp nameTxt:::p::p}, seq {space :p:26:p, comp label2:::p:34:p}}, space :p:33:p, comp button2:::p::p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"closable": true
+			"title": "预备党员"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "scrollPane1MousePressed", true ) )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "peopleTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "" )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "编号" )
+						add( "姓名" )
+						add( "性别" )
+						add( "出生日期" )
+						add( "学历学位" )
+						add( "籍贯" )
+						add( "职务职称" )
+						add( "入党时间" )
+						add( "党内职务" )
+						add( "身份证号" )
+						add( "政治面貌" )
+						add( "组织名称" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "预备党员姓名"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "s_peopleNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查询"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "请输入需要发展成为党员的姓名"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameTxt"
+				"columns": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "确认"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 650, 460 )
+		} )
+	}
+}

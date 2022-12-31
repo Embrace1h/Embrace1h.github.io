@@ -1,0 +1,38 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:398:x};par l {seq {space :0:0:x, comp jp:::p::p, space :0:0:x}}"
+			"$verticalGroup": "par l {space :0:280:x};par l {seq {space :0:0:x, comp jp:::p::p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"title": "用户"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:400:x};par l {seq {space :0:0:x, par l {comp jsp:::p:363:p, seq {comp jtf:::p:267:p, space :18:18:p, comp jb:::p::p}}, space :0:0:x}}"
+				"$verticalGroup": "par l {space :0:280:x};par l {seq {space :0:0:x, comp jsp:::p:217:p, space :12:12:p, par l {comp jtf:::p::p, comp jb:::p::p}, space :0:0:x}}"
+			} ) {
+				name: "jp"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "jtf"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jb"
+					"text": "发送"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jbActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jbActionPerformed", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "jsp"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "jta"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

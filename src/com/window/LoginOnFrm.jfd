@@ -1,0 +1,45 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:95:p, par l {comp label2:::p::p, comp label3:::p::p}, space :p:67:p, par l:::p {comp passwordTxt::::88:x, comp userNameTxt::::88:x}}, seq l {space :p:118:p, comp label1:::p::p}, seq l {space :p:107:p, comp button1:::p:124:p, space :::p, comp button2:::p::p}}, space ::83:x}}"
+			"$verticalGroup": "par l {seq l {space :p:43:p, comp label1:::p::p, space s:::p, par b {comp userNameTxt::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp passwordTxt::b:p::p, comp label3::b:p::p}, space :p:34:p, par b {comp button1::b:p::p, comp button2::b:p::p}, space ::41:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "高校党务管理系统"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "帐号："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "密码："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passwordTxt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "登录"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "注册"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

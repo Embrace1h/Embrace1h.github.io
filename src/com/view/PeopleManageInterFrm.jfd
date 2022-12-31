@@ -1,0 +1,232 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::21:x, comp 表单操作:::p::p, space :::p}, seq l {space :p:34:p, par l {comp scrollPane1:::p:621:p, seq {space :p:75:p, comp label1:::p::p, space :p:81:p, comp s_peopleNameTxt:::p:127:p, space :p:72:p, comp button1:::p::p}}, space ::60:x}}"
+			"$verticalGroup": "par l {seq l {space :p:17:p, par b {comp button1::b:p::p, comp s_peopleNameTxt::b:p::p, comp label1::b:p::p}, space :p:32:p, comp scrollPane1::::158:x, space s:::p, comp 表单操作:::p::p, space :p:25:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"closable": true
+			"title": "人员信息"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "scrollPane1MousePressed", true ) )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "peopleTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "" )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "编号" )
+						add( "姓名" )
+						add( "性别" )
+						add( "出生日期" )
+						add( "学历学位" )
+						add( "籍贯" )
+						add( "职务职称" )
+						add( "入党时间" )
+						add( "党内职务" )
+						add( "身份证号" )
+						add( "政治面貌" )
+						add( "组织名称" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "党员姓名"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "s_peopleNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查询"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {par l {seq l {space :p:111:p, comp button2:::p::p}, seq l {space :p:11:p, par l {comp label2:::p::p, comp label3:::p::p, comp label4:::p::p, comp label5::l:p::p, comp label6::l:p::p, comp label7:::p::p}, space s:::p, par l {par t:l::p {comp idTxt:::::x, comp nameTxt:::::x}, comp genderTxt::l:p::p, comp dateTxt::l:p::p, comp degreeTxt::l:p::p, comp homeTxt::l:p::p}, space :p:103:p, par l {comp label13:::p::p, comp label12:::p::p, comp label11:::p::p, comp label10:::p::p, comp label8:::p::p, comp label9:::p::p}}}, space ::84:x, par l {comp 职务职称文本:::p::p, comp button3:::p::p, comp 入党时间文本:::p::p, comp 党内职务文本:::p::p, comp 身份证号文本:::p::p, comp 政治面貌文本:::p::p, comp 组织名称文本:::p::p}, space :p:132:p}}"
+				"$verticalGroup": "par l {seq l {space :p:18:p, par b {comp label2::b:p::p, comp idTxt::b:p::p, comp label8::b:p::p, comp 职务职称文本::b:p::p}, space :::p, par b {comp label3::b:p::p, comp nameTxt::b:p::p, comp label9::b:p::p, comp 入党时间文本::b:p::p}, space :::p, par b {comp label4::b:p::p, comp genderTxt::b:p::p, comp label10::b:p::p, comp 党内职务文本::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp dateTxt::b:p::p, comp label11::b:p::p, comp 身份证号文本::b:p::p}, space :::p, par b {comp degreeTxt::b:p::p, comp label6::b:p::p, comp label12::b:p::p, comp 政治面貌文本::b:p::p}, space s:::p, par b {comp homeTxt::b:p::p, comp label7::b:p::p, comp label13::b:p::p, comp 组织名称文本::b:p::p}, space ::9:x, par b {comp button2::b:p::p, comp button3::b:p::p}, space :p:14:p}}"
+			} ) {
+				name: "表单操作"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "编号："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idTxt"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "姓名："
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameTxt"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "性别："
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "出生日期："
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "学历学位"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "genderTxt"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "dateTxt"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "degreeTxt"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "籍贯"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "homeTxt"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "修改"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "删除"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "职务职称"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "职务职称文本"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "入党时间"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "党内职务"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "身份证号"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "政治面貌"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "组织名称"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "入党时间文本"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "党内职务文本"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "身份证号文本"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "政治面貌文本"
+					"columns": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "组织名称文本"
+					"columns": 10
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 715, 600 )
+		} )
+	}
+}
